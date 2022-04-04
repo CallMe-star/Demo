@@ -1,3 +1,10 @@
 hello world
 我将主分支main，改成了master
 更改之后不起作用
+
+
+使用以下四个命令之后，切换主分支为master，但是main在github上还在
+git branch -m main master
+git fetch origin
+git branch -u origin/master master
+git remote set-head origin -a
